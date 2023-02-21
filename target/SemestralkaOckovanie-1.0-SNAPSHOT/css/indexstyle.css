@@ -1,0 +1,230 @@
+body{
+    overflow: auto;
+    /*background: linear-gradient(to bottom, #e2e2e2, #ffffff);*/
+
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 20%,
+            rgba(0, 0, 0, 0.1) 20%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.2) 40%,
+            rgba(0, 0, 0, 0.2) 60%,
+            rgba(0, 0, 0, 0.4) 60%,
+            rgba(0, 0, 0, 0.4) 80%,
+            rgba(0, 0, 0, 0.5) 80%
+    ),
+    linear-gradient(
+            45deg,
+            rgba(137, 137, 137, 0.3) 20%,
+            rgba(137, 137, 137, 0.4) 20%,
+            rgba(137, 137, 137, 0.4) 40%,
+            rgba(137, 137, 137, 0.5) 40%,
+            rgba(137, 137, 137, 0.5) 60%,
+            rgba(137, 137, 137, 0.6) 60%,
+            rgba(137, 137, 137, 0.6) 80%,
+            rgba(137, 137, 137, 0.7) 80%
+    ),
+    linear-gradient(
+            -45deg,
+            rgba(200, 200, 200, 0) 20%,
+            rgba(200, 200, 200, 0.1) 20%,
+            rgba(200, 200, 200, 0.1) 40%,
+            rgba(200, 200, 200, 0.2) 40%,
+            rgba(200, 200, 200, 0.2) 60%,
+            rgba(200, 200, 200, 0.4) 60%,
+            rgba(200, 200, 200, 0.4) 80%,
+            rgba(200, 200, 200, 0.6) 80%
+    ),
+    linear-gradient(
+            90deg,
+            rgba(226, 226, 226, 0) 20%,
+            rgba(226, 226, 226, 0.3) 20%,
+            rgba(226, 226, 226, 0.3) 40%,
+            rgba(226, 226, 226, 0.5) 40%,
+            rgba(226, 226, 226, 0.5) 60%,
+            rgba(226, 226, 226, 0.7) 60%,
+            rgba(226, 226, 226, 0.7) 80%,
+            rgba(226, 226, 226, 0.8) 80%
+    ),
+    linear-gradient(
+            -90deg,
+            rgba(0, 0, 100, 0) 20%,
+            rgba(0, 0, 100, 0.4) 20%,
+            rgba(0, 0, 100, 0.4) 40%,
+            rgba(0, 0, 100, 0.5) 40%,
+            rgba(0, 0, 100, 0.5) 60%,
+            rgba(0, 0, 100, 0.6) 60%,
+            rgba(0, 0, 100, 0.6) 80%,
+            rgba(0, 0, 100, 0.8) 80%
+    ),
+    linear-gradient(
+            180deg,
+            rgba(254, 163, 170, 0) 20%,
+            rgba(254, 163, 170, 0.4) 20%,
+            rgba(254, 163, 170, 0.4) 40%,
+            rgba(254, 163, 170, 0.6) 40%,
+            rgba(254, 163, 170, 0.6) 60%,
+            rgba(254, 163, 170, 0.8) 60%,
+            rgba(254, 163, 170, 0.8) 80%,
+            rgba(254, 163, 170, 0.9) 80%
+    );
+    background-color: rgb(254, 163, 170);
+    background-size: 100% 100%;
+
+
+
+
+
+
+    font-family:Tahoma;
+    font-size:15px;
+}
+
+/* Headers Style */
+h1{
+    text-align:center;
+    font-size:4em;
+    color:#fff;
+    text-shadow: 5px 1px 2px #000;
+}
+
+h2{
+    text-align:center;
+    color:#fff;
+    background:#007E30;
+    text-shadow: 3px 1px 2px #000;
+}
+
+h3{
+    font-size:3em;
+    color:#fff;
+    background:#007E30;
+    text-shadow: 3px 1px 2px #000;
+}
+
+h5{
+    text-align:center;
+    color:#fff;
+    /*background: #4e555b;*/
+    text-shadow: 3px 1px 2px #000;
+}
+
+h6{
+    text-align:center;
+    color:#fff;
+    font-size:3em;
+    background:red;
+    text-shadow: 3px 1px 2px #000;
+}
+
+/* Image top of the menu */
+.TopImage{
+    position:relative;
+    left:110px;
+    z-index:2;
+    width:300px;
+    margin-bottom:-2px;
+}
+
+/* Text boxes style */
+.messagebox{
+    width:80%;
+    height:200px;
+    background-color:white;
+    position:relative;
+    left:120px;
+    line-height: 1.5em;
+    padding:25px;
+    margin-bottom: 50px;
+    border-left:5px solid #007E30;
+}
+
+/* Text boxes style in hover */
+.messagebox:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Default shadow style */
+.shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/* CoronaVirus Animation
+Default speed is: 10s
+MoveUpDown is a keyFrames that define the position*/
+.animatediv{
+    animation: MoveUpDown 10s linear infinite;
+    position: absolute;
+    right: 50px;
+}
+/* position of corona animation */
+@keyframes MoveUpDown {
+    0%, 100% {
+        top: 500px;
+    }
+    50% {
+        top: 700px;
+    }
+}
+
+/*Main Menu Style*/
+ul.menu {
+    position:absolute;
+    left:120px;
+    background:#fff;
+    width:300px;
+    z-index:3;
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    overflow:hidden;
+}
+
+.menu li a {
+    width:300px;
+    padding-left:15px;
+    height:40px;
+    line-height:40px;
+    display:block;
+    overflow:hidden;
+    position:relative;
+    text-decoration:none;
+    font-size:15px;
+    color:#686868;
+}
+
+.menu li a:hover {
+    background:#efefef;
+    border-left:5px solid #007E30;
+}
+
+/*Table Container Style*/
+#TblCon{
+    background:#efefef;
+}
+
+/*Table Style*/
+.Tbl{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    font-size:10px;
+}
+
+/* Final Tite (Wash Your Hands) */
+#WashHandsTxt{
+    color:lightgrey;
+    font-size:8em;
+    text-align:center;
+}
+
+.card-deck {
+    margin: 0 -25px;
+    justify-content: center;
+}
+.card p {
+    font-size: 1.4rem;
+    border: 1px solid #fff;
+}
